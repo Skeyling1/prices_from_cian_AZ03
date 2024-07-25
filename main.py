@@ -13,7 +13,7 @@ driver.get(url)
 time.sleep(5)
 
 # Поиск элементов с ценами
-prices_elements = driver.find_elements(By.CSS_SELECTOR, 'span[class*="Price__price"]')
+prices_elements = driver.find_elements(By.CSS_SELECTOR, '#frontend-serp > div > div._93444fe79c--wrapper--W0WqH > div:nth-child(1) > article > div._93444fe79c--card--ibP42 > div > div._93444fe79c--general--BCXJ4 > div > div:nth-child(5) > div:nth-child(1) > span > span')
 
 # Извлечение текста цен
 prices = [price.text for price in prices_elements]
