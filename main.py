@@ -13,7 +13,9 @@ driver.get(url)
 time.sleep(5)
 
 # Поиск элементов с ценами
-prices_elements = driver.find_elements(By.CSS_SELECTOR, '#frontend-serp > div > div._93444fe79c--wrapper--W0WqH > div:nth-child(1) > article > div._93444fe79c--card--ibP42 > div > div._93444fe79c--general--BCXJ4 > div > div:nth-child(5) > div:nth-child(1) > span > span')
+prices_elements = driver.find_elements(By.CLASS_NAME, '_93444fe79c--color_black_100--Ephi7 _93444fe79c--lineHeight_28px--KFXmc _93444fe79c--fontWeight_bold--BbhnX _93444fe79c--fontSize_22px--sFuaL _93444fe79c--display_block--KYb25 _93444fe79c--text--e4SBY _93444fe79c--text_letterSpacing__normal--tfToq')
+
+print(prices_elements)
 
 # Извлечение текста цен
 prices = [price.text for price in prices_elements]
