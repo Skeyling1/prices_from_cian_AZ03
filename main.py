@@ -13,7 +13,7 @@ driver.get(url)
 time.sleep(5)
 
 # Поиск элементов с ценами
-prices_elements = driver.find_elements(By.CLASS_NAME, '_93444fe79c--color_black_100--Ephi7 _93444fe79c--lineHeight_28px--KFXmc _93444fe79c--fontWeight_bold--BbhnX _93444fe79c--fontSize_22px--sFuaL _93444fe79c--display_block--KYb25 _93444fe79c--text--e4SBY _93444fe79c--text_letterSpacing__normal--tfToq')
+prices_elements = driver.find_elements(By.XPATH, '//span[@data-mark="MainPrice"]/span')
 
 print(prices_elements)
 
